@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atributos ODS</title>
+<style>
+:root{
+  --navy:#0b3d91;
+  --ink:#0f172a;
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --card:#ffffff;
+  --border:#e5e7eb;
+  --shadow:0 8px 22px rgba(2,6,23,.08);
+  --ambiental:#0e9f6e;
+  --social:#2563eb;
+  --economico:#b45309;
+  --governanca:#7c3aed;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 20px 44px}
+.banner{display:flex;align-items:center;justify-content:center;margin:12px auto 10px;max-width:1100px;padding:0 20px}
+.banner .card{background:var(--navy);color:#fff;border-radius:18px;padding:16px 22px;font-size:22px;font-weight:800;letter-spacing:.2px;box-shadow:var(--shadow);text-align:center;width:100%}
+.tabs{max-width:1100px;margin:0 auto;padding:0 20px 10px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(255,255,255,.98);backdrop-filter:saturate(120%) blur(6px);z-index:10}
+.tablist{display:flex;gap:10px;flex-wrap:wrap;padding:10px 0}
+.tab{appearance:none;border:1px solid var(--border);background:#fff;padding:8px 12px;border-radius:12px;cursor:pointer;font-weight:600;color:var(--ink)}
+.tab[aria-selected="true"]{border-color:var(--navy);box-shadow:0 0 0 2px rgba(11,61,145,.12)}
+.section{display:none}
+.section.active{display:block}
+h2{margin:10px 0 6px;font-size:20px}
+.ods{font-size:12px;color:var(--muted);margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin:10px 0 30px}
+.card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px 18px 12px;box-shadow:var(--shadow)}
+@media(min-width:860px){.card{grid-column:span 6}}
+ul{margin:8px 0 0 22px;padding:0}
+li{margin:4px 0}
+.tag{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.4px;padding:6px 10px;border-radius:999px;color:#fff;margin-bottom:6px}
+.tag.ambiental{background:var(--ambiental)}
+.tag.social{background:var(--social)}
+.tag.economico{background:var(--economico)}
+.tag.governanca{background:var(--governanca)}
+.pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:2px 8px;font-size:12px;color:var(--muted);margin-left:8px}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin-top:16px;margin-bottom:6px}
+.section-head h1{font-size:22px;color:var(--ink);margin:0}
+.toplink{font-size:12px;color:var(--muted);text-decoration:none}
+.toplink:hover{color:var(--navy)}
+hr.sep{border:none;border-top:1px solid var(--border);margin:18px 0}
+@media print{
+  .tabs{display:none}
+  .card{break-inside:avoid}
+  body{font-size:12px}
+  .wrap{padding:0 0 0}
+}
+</style>
+</head>
+<body id="top">
+
+<div class="banner">
+  <div class="card">Atributos ODS</div>
+</div>
+
+<div class="wrap">
+  <div class="grid">
+    <div class="card">
+      <h2>Transforme dados em estratégia</h2>
+      <p>O Atributos ODS é uma ferramenta interativa que avalia o desempenho dos portos em relação aos Objetivos de Desenvolvimento Sustentável (ODS), permitindo transformar dados em ações estratégicas. Com 84 indicadores e um sistema de pontuação de 1 a 4, o modelo possibilita realizar simulações inteligentes para descobrir quais ODS estão mais conectados às ações do porto, identificar oportunidades de melhoria e monitorar resultados em tempo real. Mais do que uma métrica, o Atributos ODS é um instrumento de gestão e inovação que fortalece a imagem institucional dos portos, impulsiona a competitividade e contribui para uma transição verde eficaz.</p>
+    </div>
+
+    <div class="card" style="text-align:center">
+      <h2>Explore o modelo interativo</h2>
+      <p>Acesse a versão online e conheça o potencial do Atributos ODS em ação.</p>
+      <a href="https://modeloods-ff6md9cyz5pfwinhzlupgm.streamlit.app/" target="_blank" style="display:inline-block;margin-top:10px;padding:10px 20px;background:var(--navy);color:#fff;border-radius:10px;text-decoration:none;font-weight:600;">Abrir o Modelo ODS</a>
+    </div>
+  </div>
+</div>
+
+<div class="tabs" role="tablist" aria-label="Áreas de indicadores">
+  <div class="tablist">
+    <button class="tab" role="tab" aria-controls="ambiental" aria-selected="true">Ambiental</button>
+    <button class="tab" role="tab" aria-controls="social" aria-selected="false">Social</button>
+    <button class="tab" role="tab" aria-controls="economico" aria-selected="false">Econômico</button>
+    <button class="tab" role="tab" aria-controls="governanca" aria-selected="false">Governança</button>
+    <a href="#all" class="toplink" style="margin-left:auto">Ver tudo</a>
+  </div>
+</div>
+
+<section id="ambiental" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h1>Ambiental</h1>
+      <a class="toplink" href="#top">Voltar ao topo</a>
+    </div>
+    <div class="grid">
+    <div class="card">
+      <span class="tag ambiental">Ambiental</span>
+      <h2>Energia limpa e eficiência energética <span class="pill">ODS 7</span></h2>
+      <div class="ods">Indicadores focados em energia renovável, eficiência e infraestrutura elétrica para navios.</div>
+      <ul><li><strong>7.1</strong> Número de programas de conscientização sobre uso racional de energia</li>
+<li><strong>7.2</strong> Número de programas de gestão de eficiência energética</li>
+<li><strong>7.3</strong> Número de iniciativas de inovação tecnológica em eficiência energética</li>
+<li><strong>7.4</strong> Percentual de energia renovável contratada e produzida nas instalações portuárias</li>
+<li><strong>7.5</strong> Percentual de biocombustíveis utilizados em operações elétricas e mecânicas</li>
+<li><strong>7.6</strong> Número de iniciativas de inovação tecnológica em energia renovável</li>
+<li><strong>7.7</strong> Diversidade de fontes de energia renovável nas instalações portuárias</li>
+<li><strong>7.8</strong> Quantidade de parcerias para promoção de energia limpa</li>
+<li><strong>7.9</strong> Quantidade de estações de carregamento para veículos elétricos</li>
+<li><strong>7.10</strong> Percentual de fornecimento de energia renovável para navios atracados</li>
+<li><strong>7.11</strong> Percentual de abastecimento com GNL (Gás Natural Liquefeito)</li>
+<li><strong>7.12</strong> Número de iniciativas de inovação tecnológica em atendimento elétrico/energético para navios</li>
+<li><strong>7.13</strong> Quantidade de navios que utilizam energia renovável durante a atracação</li>
+<li><strong>7.14</strong> Existência de tarifas diferenciadas para navios com desempenho ambiental superior</li></ul>
+    </div>
+    
+
+    <div class="card">
+      <span class="tag ambiental">Ambiental</span>
+      <h2>Ambiente, resíduos e recursos hídricos <span class="pill">ODS 12</span></h2>
+      <div class="ods">Qualidade do ar, água, resíduos e sistemas de gestão ambiental.</div>
+      <ul><li><strong>12.1</strong> Concentração de poluentes atmosféricos</li>
+<li><strong>12.2</strong> Volume total de água utilizada</li>
+<li><strong>12.3</strong> Volume total de água reaproveitada</li>
+<li><strong>12.4</strong> Número de acidentes ambientais registrados internamente</li>
+<li><strong>12.5</strong> Quantidade total de resíduos gerados</li>
+<li><strong>12.6</strong> Percentual de resíduos reciclados e/ou reutilizados</li>
+<li><strong>12.7</strong> Implementação de sistema de gestão ambiental (SGA)</li>
+<li><strong>12.8</strong> Status de certificação ISO 14001</li></ul>
+    </div>
+    
+
+    <div class="card">
+      <span class="tag ambiental">Ambiental</span>
+      <h2>Clima e resiliência <span class="pill">ODS 13</span></h2>
+      <div class="ods">Planejamento climático, emissões e resiliência operacional.</div>
+      <ul><li><strong>13.1</strong> Existência de plano estratégico para enfrentamento das mudanças climáticas</li>
+<li><strong>13.2</strong> Inventário de emissões de gases de efeito estufa</li>
+<li><strong>13.3</strong> Programa de gestão de créditos de carbono</li>
+<li><strong>13.4</strong> Programa de monitoramento climático</li>
+<li><strong>13.5</strong> Número de colaborações e parcerias para ação climática</li>
+<li><strong>13.6</strong> Existência de infraestrutura resiliente ao clima</li>
+<li><strong>13.7</strong> Índice de eficiência no tráfego de carga</li>
+<li><strong>13.8</strong> Redução percentual de emissões por meio de novas tecnologias</li></ul>
+    </div>
+    
+
+    <div class="card">
+      <span class="tag ambiental">Ambiental</span>
+      <h2>Vida na água e zona costeira <span class="pill">ODS 14</span></h2>
+      <div class="ods">Qualidade ambiental marinha, habitats e água de lastro.</div>
+      <ul><li><strong>14.1</strong> Número de espécies exóticas invasoras registradas</li>
+<li><strong>14.2</strong> Concentração média de poluentes na água costeira (normas CONAMA)</li>
+<li><strong>14.3</strong> Qualidade do sedimento marinho (normas CONAMA)</li>
+<li><strong>14.4</strong> Número de eventos ambientais registrados na zona costeira</li>
+<li><strong>14.5</strong> Existência de monitoramento da água de lastro</li>
+<li><strong>14.6</strong> Área total de habitats marinhos protegidos na área de atuação do porto</li>
+<li><strong>14.7</strong> Valor total investido em pesquisas sobre recursos marinhos sustentáveis</li>
+<li><strong>14.8</strong> Número de projetos de pesquisa marinha financiados pelo porto</li></ul>
+    </div>
+    
+
+    <div class="card">
+      <span class="tag ambiental">Ambiental</span>
+      <h2>Cidade/porto: ruído e áreas verdes <span class="pill">ODS 11</span></h2>
+      <div class="ods">Interfaces ambientais cidade-porto.</div>
+      <ul><li><strong>11.1</strong> Número de reclamações sobre impactos ambientais e sociais do porto</li>
+<li><strong>11.2</strong> Índice de controle de ruído portuário</li>
+<li><strong>11.4</strong> Área de espaços verdes ou públicos desenvolvidos/mantidos pelo porto</li>
+<li><strong>11.6</strong> Número de programas ou parcerias para mobilidade sustentável</li></ul>
+    </div>
+    </div>
+    <hr class="sep">
+  </div>
+</section>
+
+
+<section id="social" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h1>Social</h1>
+      <a class="toplink" href="#top">Voltar ao topo</a>
+    </div>
+    <div class="grid">
+    <div class="card">
+      <span class="tag social">Social</span>
+      <h2>Saúde, segurança e inclusão <span class="pill">ODS 8</span></h2>
+      <div class="ods">Indicadores de SST, diversidade e inclusão.</div>
+      <ul><li><strong>8.1</strong> Número de ausências por motivos de saúde</li>
+<li><strong>8.2</strong> Número de afastamentos por doenças ocupacionais</li>
+<li><strong>8.3</strong> Número de afastamentos por acidentes de trabalho</li>
+<li><strong>8.5</strong> Número de acidentes com vítimas fatais</li>
+<li><strong>8.6</strong> Percentual de trabalhadores locais em cargos de chefia</li>
+<li><strong>8.7</strong> Percentual de mulheres no quadro de colaboradores</li>
+<li><strong>8.8</strong> Percentual de jovens (14–24 anos) entre os colaboradores</li>
+<li><strong>8.9</strong> Percentual de colaboradores com deficiência</li>
+<li><strong>8.17</strong> Número de políticas sociais e inclusivas implementadas</li></ul>
+    </div>
+    
+
+    <div class="card">
+      <span class="tag social">Social</span>
+      <h2>Engajamento comunitário <span class="pill">ODS 11</span></h2>
+      <div class="ods">Projetos e investimentos voltados à comunidade.</div>
+      <ul><li><strong>11.3</strong> Número de projetos de sustentabilidade voltados à comunidade</li>
+<li><strong>11.5</strong> Valor total de investimentos em infraestrutura comunitária</li>
+<li><strong>11.7</strong> Número de iniciativas de engajamento comunitário promovidas pelo porto</li></ul>
+    </div>
+    </div>
+    <hr class="sep">
+  </div>
+</section>
+
+
+<section id="economico" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h1>Econômico</h1>
+      <a class="toplink" href="#top">Voltar ao topo</a>
+    </div>
+    <div class="grid">
+    <div class="card">
+      <span class="tag economico">Econômico</span>
+      <h2>Desempenho operacional e financeiro <span class="pill">ODS 8</span></h2>
+      <div class="ods">Resultados de receita, produtividade e ranking setorial.</div>
+      <ul><li><strong>8.10</strong> Taxa de crescimento anual da receita ajustada pela inflação</li>
+<li><strong>8.11</strong> Valor total da receita portuária</li>
+<li><strong>8.12</strong> Margem EBITDA</li>
+<li><strong>8.13</strong> Quantidade de toneladas movimentadas</li>
+<li><strong>8.14</strong> Faturamento por colaborador</li>
+<li><strong>8.15</strong> Posição no ranking ANTAQ de movimentação de cargas</li>
+<li><strong>8.16</strong> Diversidade de tipos de carga movimentada</li></ul>
+    </div>
+    
+
+    <div class="card">
+      <span class="tag economico">Econômico</span>
+      <h2>Inovação, P&D e automação <span class="pill">ODS 9</span></h2>
+      <div class="ods">Capacidades tecnológicas, parcerias e empreendedorismo.</div>
+      <ul><li><strong>9.1</strong> Número de patentes depositadas/cedidas no INPI</li>
+<li><strong>9.2</strong> Número de publicações científicas de alto impacto financiadas pelo porto</li>
+<li><strong>9.3</strong> Número de premiações e selos de qualidade relacionados à inovação</li>
+<li><strong>9.4</strong> Posição no ranking de inovação do setor portuário</li>
+<li><strong>9.5</strong> Nível médio de maturidade da inovação por projeto</li>
+<li><strong>9.6</strong> Diversidade de áreas do conhecimento em projetos de pesquisa aplicada</li>
+<li><strong>9.7</strong> Percentual de operações automatizadas no porto</li>
+<li><strong>9.8</strong> Número de convênios com universidades e centros de pesquisa</li>
+<li><strong>9.9</strong> Número de pesquisadores externos vinculados a projetos de inovação</li>
+<li><strong>9.10</strong> Número de empresas parceiras em projetos de inovação</li>
+<li><strong>9.11</strong> Número de startups apoiadas com foco em soluções inovadoras</li>
+<li><strong>9.12</strong> Número de convênios com outros portos/terminais para promoção da inovação</li></ul>
+    </div>
+    </div>
+    <hr class="sep">
+  </div>
+</section>
+
+
+<section id="governanca" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h1>Governança</h1>
+      <a class="toplink" href="#top">Voltar ao topo</a>
+    </div>
+    <div class="grid">
+    <div class="card">
+      <span class="tag governanca">Governança</span>
+      <h2>Transparência, certificações e diálogo com stakeholders <span class="pill">ODS 17</span></h2>
+      <div class="ods">Práticas de governança, reporte e parcerias estratégicas.</div>
+      <ul><li><strong>17.1</strong> Adesão ao Pacto Global da ONU</li>
+<li><strong>17.2</strong> Alinhamento dos indicadores com frameworks IDA e GRI</li>
+<li><strong>17.3</strong> Existência de certificação EcoPorts</li>
+<li><strong>17.4</strong> Publicação do relatório de sustentabilidade</li>
+<li><strong>17.5</strong> Divulgação da posição no IDA</li>
+<li><strong>17.6</strong> Divulgação dos indicadores de sustentabilidade</li>
+<li><strong>17.7</strong> Registro e comunicação de incidentes ambientais</li>
+<li><strong>17.8</strong> Número de membros independentes no conselho de administração</li>
+<li><strong>17.9</strong> Número de parcerias com ONGs e entidades para iniciativas de sustentabilidade</li>
+<li><strong>17.10</strong> Existência de canais ativos de comunicação com partes interessadas</li></ul>
+    </div>
+    </div>
+    <hr class="sep">
+  </div>
+</section>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const sections = document.querySelectorAll('.section');
+  function showSection(id){
+    sections.forEach(function(s){ s.classList.remove('active'); });
+    document.getElementById(id).classList.add('active');
+    tabs.forEach(function(t){ t.setAttribute('aria-selected', String(t.getAttribute('aria-controls')===id)); });
+    location.hash = id;
+  }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){ showSection(t.getAttribute('aria-controls')); }); });
+  const hash = location.hash.replace('#','');
+  if(hash && document.getElementById(hash)){
+    showSection(hash);
+  }else{
+    showSection('ambiental');
+  }
+  document.querySelector('.tabs a[href="#all"]').addEventListener('click', function(e){
+    e.preventDefault();
+    sections.forEach(function(s){ s.classList.add('active'); });
+    tabs.forEach(function(t){ t.setAttribute('aria-selected','false'); });
+    history.replaceState(null, '', '#all');
+  });
+</script>
+
+</body>
+</html>
