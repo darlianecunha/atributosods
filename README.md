@@ -1,7 +1,7 @@
-[README-atributosods.md](https://github.com/user-attachments/files/26450296/README-atributosods.md)
 # SDG Attributes — A Sustainability Index for Brazilian Ports
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.marpol.2025.106841-blue)](https://doi.org/10.1016/j.marpol.2025.106841)
+[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20708458.svg)](https://doi.org/10.5281/zenodo.20708458)
+[![Paper DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.marpol.2025.106841-blue)](https://doi.org/10.1016/j.marpol.2025.106841)
 [![Journal](https://img.shields.io/badge/Marine%20Policy-Vol.%20181%20(2025)-green)](https://www.sciencedirect.com/science/article/abs/pii/S0308597X2500257X)
 [![Live App](https://img.shields.io/badge/Live-sdgports.manus.space-orange)](https://sdgports.manus.space)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -69,10 +69,9 @@ atributosods/
 
 ## Related Projects
 
-- [port-co2-emissions](https://github.com/darlianecunha/carbonport) — CO2 emissions dashboard for ships at berth in Brazilian ports
 - [co2-liquid-bulk-calculator](https://github.com/darlianecunha/co2-liquid-bulk-calculator) — Emissions calculator for liquid bulk vessels
-- [port-cargo-dashboard](https://github.com/darlianecunha/port-cargo-dashboard) — Brazilian port cargo movement dashboard (2021-2025)
-- [SDG Port Hub](https://sdgporthub.com) — Global database of port sustainability initiatives
+- [maritimeco2](https://github.com/darlianecunha/maritimeco2) — OPS-avoidable at-berth CO2 for liquid bulk vessels
+- [vessel-explorer](https://github.com/darlianecunha/vessel-explorer) — Explorer of EU MRV vessel emissions data
 
 ## Citation
 
@@ -98,6 +97,5 @@ Associate Professor, Federal University of Maranhao (UFMA)
 Postdoctoral Researcher, Erasmus University Rotterdam
 
 - [Personal website](https://www.darlianecunha.com)
-- [Google Scholar](https://scholar.google.es/citations?user=ORCID_ID)
 - [ORCID: 0000-0003-2548-1237](https://orcid.org/0000-0003-2548-1237)
 - [LinkedIn](https://linkedin.com/in/darlianecunha)
