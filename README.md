@@ -8,10 +8,6 @@
 
 An interactive web tool that implements the sustainability assessment framework published in *Marine Policy* (2025). The model evaluates how well Brazilian ports align with the UN Sustainable Development Goals through 84 measurable indicators organised in 20 thematic dimensions.
 
-**Live demo:** 
-[sdgports.manus.space](https://sdgports.manus.space)
-
-![SDG Attributes Screenshot](https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F0a081d12e07e15a9d85e7b3ee480f88c.cdn.bubble.io%2Ff1741290696281x871970413263498200%2F2.jpg?w=1024&h=576&auto=compress&fit=crop)
 
 ## About the Research
 
