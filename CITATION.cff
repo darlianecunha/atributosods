@@ -27,12 +27,16 @@ preferred-citation:
     - family-names: "Cunha"
       given-names: "Darliane Ribeiro"
       orcid: "https://orcid.org/0000-0003-2548-1237"
+      affiliation: "Federal University of Maranhão, Brazil"
     - family-names: "Costa"
-      given-names: "Maria Denize Carneiro"
+      given-names: "Markus Dannyllo Carneiro"
+      affiliation: "Federal University of Maranhão, Brazil"
     - family-names: "Oliveira"
-      given-names: "Carlos Barreira Martinez"
+      given-names: "Clóvis Bósco Mendonça"
+      affiliation: "Federal University of Maranhão, Brazil"
     - family-names: "Pereira"
       given-names: "Newton Narciso"
+      affiliation: "Fluminense Federal University, Brazil"
   journal: "Marine Policy"
   volume: 181
   start: 106841
