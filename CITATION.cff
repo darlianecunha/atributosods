@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the peer-reviewed article below."
+type: software
+title: "SDG Attributes: a sustainability assessment framework for Brazilian ports"
+abstract: "Interactive tool implementing a sustainability assessment framework that scores Brazilian ports against the UN SDGs through 84 indicators in 20 thematic dimensions, as published in Marine Policy (2025)."
+version: "0.1.0"
+date-released: "2026-06-15"
+license: MIT
+repository-code: "https://github.com/darlianecunha/atributosods"
+url: "https://sdgports.manus.space"
+doi: "10.5281/zenodo.20708458"
+authors:
+  - family-names: "Cunha"
+    given-names: "Darliane Ribeiro"
+    orcid: "https://orcid.org/0000-0003-2548-1237"
+    affiliation: "Federal University of Maranhão (UFMA)"
+keywords:
+  - sdg
+  - sustainability
+  - ports
+  - maritime
+  - indicators
+preferred-citation:
+  type: article
+  title: "SDG attributes: A sustainability assessment framework for Brazilian ports"
+  authors:
+    - family-names: "Cunha"
+      given-names: "Darliane Ribeiro"
+      orcid: "https://orcid.org/0000-0003-2548-1237"
+    - family-names: "Costa"
+      given-names: "Maria Denize Carneiro"
+    - family-names: "Oliveira"
+      given-names: "Carlos Barreira Martinez"
+    - family-names: "Pereira"
+      given-names: "Newton Narciso"
+  journal: "Marine Policy"
+  volume: 181
+  start: 106841
+  year: 2025
+  publisher:
+    name: "Elsevier"
+  doi: "10.1016/j.marpol.2025.106841"
